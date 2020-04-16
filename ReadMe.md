@@ -1,9 +1,15 @@
-### 背景知识
-动森画布大小：32px*32px，支持的颜色一共160种，包括144种彩色，15种灰度，1个透明
-单张画布最多只允许使用16种颜色，包括1个透明色
+### Background information
+animal crossing canvas size: 32px*32px, 160 colors supported, including 144 colors, 15 grayscale, 1 transparent
+Only up to 16 colors are allowed for a single canvas, including 1 transparent color
 
-### 需要完成的内容：
-1. 原始图分割为多个N*N正方形jpg (png多一个通道处理起来比较麻烦)
-2. 正方形图片resize到32*32，并将色域转换到160种颜色内
-3. 使用k-means算法将颜色聚类到15种并生成图片
-4. 将图片的颜色和其它信息编码成动森二维码的标准，生成二维码
+### How to use
+- Place a JPG image in the script directory
+- run script. python3 animal_crossing_qrcode.py
+- The file name of the output is qrcode_filename.png
+- open NitentoSwitchOnline，scan Qrcode
+
+
+### todo
+- support PNG
+- auto cut
+- support other
