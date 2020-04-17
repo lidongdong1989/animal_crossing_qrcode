@@ -177,8 +177,10 @@ def img_to_qr(filename):
 def main():
     files = os.listdir(os.getcwd())
     for i in files:
-        if i.split('.')[-1] == 'jpg':
+        if i[-3:] == 'jpg':
             img_to_qr(i)
+        elif i[-3:] == 'png':
+            img_to_qr(png_to_jpg(i))
 
 
 if __name__ == '__main__':
