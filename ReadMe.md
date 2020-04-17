@@ -10,6 +10,6 @@ Only up to 16 colors are allowed for a single canvas, including 1 transparent co
 
 
 ### todo
-- support PNG
+~~- support PNG~~
 - auto cut
 - support other kind of design,like clothes
